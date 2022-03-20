@@ -72,7 +72,7 @@ def _find_first_key(d, keys):
     for k in keys:
         if k in d:
             return k
-    raise KeyError('No suggested keys %s in %s' % (str(keys), str(d)))
+    # raise KeyError('No suggested keys %s in %s' % (str(keys), str(d)))
 
 
 all_content_types = [
@@ -81,7 +81,7 @@ all_content_types = [
     'new_chat_photo', 'delete_chat_photo', 'group_chat_created', 'supergroup_chat_created',
     'channel_chat_created', 'migrate_to_chat_id', 'migrate_from_chat_id', 'pinned_message',
     'new_chat_members', 'invoice', 'successful_payment', 'animation', 'passport_data',
-    'poll_data', 'voice', 'game', 'chat_member'
+    'poll_data', 'voice', 'game', 'chat_member', 'poll', 'my_chat_member',
 ]
 
 

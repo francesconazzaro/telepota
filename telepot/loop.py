@@ -103,7 +103,10 @@ def _extract_message(update):
                                    'chosen_inline_result',
                                    'shipping_query',
                                    'pre_checkout_query',
-                                   'my_chat_member'])
+                                   'my_chat_member',
+                                   'poll'])
+    if not key:
+        return key, update
     return key, update[key]
 
 
